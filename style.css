@@ -1,0 +1,169 @@
+* {
+    background-color: #F9F5FA;
+    box-sizing: border-box; /* Added for better box model handling */
+}
+
+body {
+    background-color: #F9F5FA;
+    margin: 0; /* Reset default margin */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid rgb(244, 189, 189);
+}
+
+.logo h2 {
+    font-family: Dela Gothic One;
+    font-size: 2.5rem; /* Use rem for responsiveness */
+    color: #421934;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.75rem; /* Use rem for responsiveness */
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #666;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    padding: 40px 0;
+    margin-bottom: 70px;
+}
+
+.hero-content {
+    text-align: center;
+    color: #421934;
+    font-family: Dela Gothic One;
+    font-size: 3rem; /* Use rem for responsiveness */
+}
+
+.hero-image img {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.art-deco-portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    padding: 40px;
+}
+
+.portfolio-item {
+    text-align: left;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item h3 {
+    font-size: 1.25rem; /* Use rem for responsiveness */
+}
+
+.quote {
+    display: flex;
+    justify-content: right;
+}
+
+.quote p {
+    font-size: 1.5rem; /* Use rem for responsiveness */
+    text-align: left;
+    width: 50vw;
+    color: #421934;
+}
+
+.contact-input, .submit-input {
+    padding: 0.7rem 1rem;
+    border-radius: 5px;
+    border: 2px solid #221B2029;
+}
+
+.submit-input {
+    background: #CD3799;
+    color: #F9F5FA;
+}
+
+.contact {
+    text-align: center;
+}
+
+.socials-logos-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.socials-logos {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.socials-logos > img {
+    width: 2.5rem;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 0 1rem;
+    align-items: center;
+}
+
+.bottom button {
+    width: 168px;
+    height: 48px;
+    font-size: 1.25rem; /* Use rem for responsiveness */
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .hero-content {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    .art-deco-portfolio {
+        grid-template-columns: 1fr; /* Stack items on smaller screens */
+        padding: 1rem;
+    }
+
+}
